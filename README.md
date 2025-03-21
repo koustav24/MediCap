@@ -16,7 +16,7 @@ Our AI's education comes from carefully curated radiology datasets:
 - 🎓 Testing challenges: `radiologytestdata.csv` - where we see if the AI truly "gets it"
 
 Each dataset pairs images with expert-crafted descriptions—like having a radiologist mentor our AI around the clock!
-#%%
+
 ## 📊 The Knowledge Base
 Our AI's education comes from carefully curated radiology datasets:
 - 📚 Training wisdom: `radiologytraindata.csv` - where the learning begins
@@ -30,7 +30,7 @@ Each dataset pairs images with expert-crafted descriptions—like having a radio
 ## ✨ The Vision
 Ever wondered what stories medical images could tell if they could speak? **MediCap** bridges the gap between complex radiological imagery and human understanding by teaching AI to "see
 
-#%% md
+
 ## 🛠️ Bringing MediCap to Life
 
 ```bash
@@ -45,7 +45,7 @@ source enchanted-env/bin/activate  # Windows wizards use: enchanted-env\Scripts\
 # Summon the required artifacts
 pip install tensorflow keras matplotlib numpy pandas pillow nltk scikit-learn
 ```
-#%% md
+
 ## 🚀 Embarking on Your MediCap Adventure
 
 1. **Prepare your scrolls**: Organize your image data like a master librarian
@@ -93,7 +93,7 @@ The model doesn't just generate descriptions—it crafts narratives that highlig
 **A Friendly Reminder**: MediCap is a research companion, not a diagnostic oracle. All AI observations should be verified by human experts with medical degrees (they studied for a long time, after all!).
 
 *"In the intersection of pixels and prose, we find a new understanding of the human condition."*
-#%%
+
 # Sample code to demonstrate how to load a model and generate captions
 import tensorflow as tf
 import numpy as np
