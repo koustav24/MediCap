@@ -1,4 +1,3 @@
-#%% md
 # 🔬 MediCap: Giving Voice to Medical Images
 
 ## ✨ The Vision
