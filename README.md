@@ -1,131 +1,114 @@
-# 🔬 MediCap: Giving Voice to Medical Images
+# MediCap - Medical Image Captioning
 
-## ✨ The Vision
-Ever wondered what stories medical images could tell if they could speak? **MediCap** bridges the gap between complex radiological imagery and human understanding by teaching AI to "see" and "describe" what medical professionals observe. This isn't just code—it's a translator between the visual language of medicine and the words we understand.
+A deep learning project for automatic caption generation from medical images, implemented in Jupyter Notebook.
 
-## 🌟 Magic Features
-- **Visual Storytelling**: Transforms silent medical images into descriptive narratives
-- **Doctor's Assistant**: Learns the specialized vocabulary radiologists use daily
-- **Text Alchemist**: Sophisticated preprocessing that distills medical jargon into its most meaningful essence
-- **Learning Brain**: A neural network architecture that grows smarter with every image it sees
+## Overview
 
-## 📊 The Knowledge Base
-Our AI's education comes from carefully curated radiology datasets:
-- 📚 Training wisdom: `radiologytraindata.csv` - where the learning begins
-- 🧪 Validation insights: `radiologyvaldata.csv` - where the AI refines its understanding
-- 🎓 Testing challenges: `radiologytestdata.csv` - where we see if the AI truly "gets it"
+MediCap is a medical image captioning system that automatically generates descriptive text for medical images. This project aims to assist healthcare professionals by providing automated analysis and descriptions of medical imaging data[4].
 
-Each dataset pairs images with expert-crafted descriptions—like having a radiologist mentor our AI around the clock!
+## Features
 
-## 📊 The Knowledge Base
-Our AI's education comes from carefully curated radiology datasets:
-- 📚 Training wisdom: `radiologytraindata.csv` - where the learning begins
-- 🧪 Validation insights: `radiologyvaldata.csv` - where the AI refines its understanding
-- 🎓 Testing challenges: `radiologytestdata.csv` - where we see if the AI truly "gets it"
+- Automatic caption generation for medical images
+- Deep learning-based approach using neural networks
+- Jupyter Notebook implementation for easy experimentation and visualization
+- Focus on medical imaging applications
 
-Each dataset pairs images with expert-crafted descriptions—like having a radiologist mentor our AI around the clock!
-#%%
-# 🔬 MediCap: Giving Voice to Medical Images
+## Project Structure
 
-## ✨ The Vision
-Ever wondered what stories medical images could tell if they could speak? **MediCap** bridges the gap between complex radiological imagery and human understanding by teaching AI to "see
-
-
-## 🛠️ Bringing MediCap to Life
-
-```bash
-# Clone this treasure chest
-git clone https://github.com/yourusername/MediCap.git
-cd MediCap
-
-# Create your magical environment
-python -m venv enchanted-env
-source enchanted-env/bin/activate  # Windows wizards use: enchanted-env\Scripts\activate
-
-# Summon the required artifacts
-pip install tensorflow keras matplotlib numpy pandas pillow nltk scikit-learn
+```
+MediCap/
+├── Image_Captioning_On_Medical_Images.ipynb  # Main implementation notebook
+└── README.md                                 # Project documentation
 ```
 
-## 🚀 Embarking on Your MediCap Adventure
+## Getting Started
 
-1. **Prepare your scrolls**: Organize your image data like a master librarian
-2. **Cast the preprocessing spell**: Transform raw text into learning-ready form
-3. **Train your apprentice**: Let the model absorb patterns and relationships
-4. **Witness the magic**: Generate insightful captions for new medical mysteries
+### Prerequisites
 
-```python
-# Reveal the secrets of an unknown image
-mysterious_image = load_and_prepare_image('enigmatic_scan.jpg')
+- Python 3.x
+- Jupyter Notebook
+- Deep learning libraries (TensorFlow/PyTorch)
+- Medical imaging libraries
+- Standard data science libraries (NumPy, Pandas, Matplotlib)
 
-# Let the AI speak its wisdom
-revelation = generate_caption(model, mysterious_image, tokenizer, max_length)
-print(f"The image reveals: {revelation}")
-#%% md
-## 🔧 Tools of the Trade
-- 🐍 Python 3.9 - Our trusted familiar
-- 🧠 TensorFlow/Keras - The neural forge
-- 🔤 NLTK - The language sage
-- 🐼 Pandas - The data tamer
-- 📊 Matplotlib - The vision crystal
-- 🖼️ PIL/Pillow - The image enchanter
+### Installation
 
-## 🏗️ The Blueprint
-Behind the scenes, MediCap works its magic through:
-- **Word Alchemy**: Transforming text through lowercase conversion, removing linguistic noise, and distilling meaning
-- **Visual Perception**: Extracting the essence of each image
-- **Neural Weaving**: Combining vision and language in a dance of understanding
-- **Wisdom Testing**: Ensuring the AI speaks truth through rig
-#%% md
-## 💎 Fruits of Our Labor
-The model doesn't just generate descriptions—it crafts narratives that highlight clinically relevant features. It's like having a tireless resident who gets better with every case reviewed!
+1. Clone the repository:
+```bash
+git clone https://github.com/koustav24/MediCap.git
+cd MediCap
+```
 
-## 🔮 The Road Ahead
-- Expanding our AI's "visual vocabulary" with more diverse medical imagery
-- Implementing "attention" - teaching our model where to focus its gaze
-- Creating specialized dialects for different medical domains
-- Building a friendly portal where medical professionals can consult our AI companion
+2. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-## 📜 The Fine Print
-[MIT License](LICENSE)
+3. Launch Jupyter Notebook:
+```bash
+jupyter notebook Image_Captioning_On_Medical_Images.ipynb
+```
+
+## Usage
+
+Open the `Image_Captioning_On_Medical_Images.ipynb` notebook and follow the step-by-step implementation:
+
+1. **Data Loading**: Load and preprocess medical image datasets
+2. **Model Architecture**: Build the image captioning model
+3. **Training**: Train the model on medical image-caption pairs
+4. **Evaluation**: Test the model and generate captions for new images
+5. **Visualization**: Display results and model performance
+
+## Medical Image Captioning Applications
+
+Medical image captioning has several important applications in healthcare:
+
+- **Automated Report Generation**: Generate preliminary impressions for medical reports[4]
+- **Clinical Decision Support**: Assist radiologists and medical professionals
+- **Medical Education**: Provide educational descriptions of medical conditions
+- **Healthcare Efficiency**: Reduce time spent on manual report writing[4]
+
+## Related Work
+
+This project builds upon the growing field of medical image captioning, which includes notable works like:
+
+- **MedICap**: A concise model that won the ImageCLEFmedical Caption 2023 challenge[2][3]
+- **MedCLIP**: Medical image captioning using CLIP architecture[6]
+- **MedICaT**: Large-scale dataset of medical images and captions[5]
+
+## Model Architecture
+
+The implementation likely follows common medical image captioning approaches:
+
+- **Encoder**: Extracts visual features from medical images
+- **Decoder**: Generates descriptive text based on visual features[2]
+- **Attention Mechanism**: Focuses on relevant image regions during caption generation
+
+## Dataset
+
+Medical image captioning typically uses datasets such as:
+- Chest X-ray datasets with associated reports
+- Medical image collections with expert annotations
+- Open access medical literature with figure captions[5]
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit issues, feature requests, or pull requests.
+
+## License
+
+This project is available under the MIT License.
+
+## Acknowledgments
+
+- The medical imaging community for providing datasets and benchmarks
+- Open-source deep learning frameworks that enable this research
+- Healthcare professionals who provide ground truth annotations
+
+## Contact
+
+For questions or collaboration opportunities, please reach out through GitHub issues or contact the repository owner.
 
 ---
 
-**A Friendly Reminder**: MediCap is a research companion, not a diagnostic oracle. All AI observations should be verified by human experts with medical degrees (they studied for a long time, after all!).
-
-*"In the intersection of pixels and prose, we find a new understanding of the human condition."*
-
-# Sample code to demonstrate how to load a model and generate captions
-import tensorflow as tf
-import numpy as np
-from PIL import Image
-import matplotlib.pyplot as plt
-
-def load_and_prepare_image(image_path, target_size=(224, 224)):
-    """Load and prepare an image for the model"""
-    img = Image.open(image_path)
-    img = img.resize(target_size)
-    img = np.array(img) / 255.0
-    img = np.expand_dims(img, axis=0)
-    return img
-
-def generate_caption(model, image, tokenizer, max_length=50):
-    """Generate a caption for the given image"""
-    # Start token
-    in_text = 'startseq'
-
-    # Iterate until we reach end token or max length
-    for _ in range(max_length):
-        # Encode the current input sequence
-        sequence = tokenizer.texts_to_sequences([in_text])[0]
-        # Pad the sequence
-        sequence = tf.keras.preprocessing.sequence.pad_sequences([sequence], maxlen=max_length)
-
-        # Predict next word
-        yhat = model.predict([image, sequence], verbose=0)
-        yhat = np.argmax(yhat)
-
-        # Map integer back to word
-        word = ''
-        for word_idx, index in tokenizer.word_index.items():
-            if index == yhat:
-                word = word_idx
+*This project aims to advance the field of automated medical image analysis and support healthcare professionals in their diagnostic work.*
